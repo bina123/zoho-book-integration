@@ -120,7 +120,7 @@ final class ZohoAuthController extends Controller
 
         return response()->json([
             'connected' => $token !== null,
-            'organization_id' => $token?->organization_id,
+            'organization_id' => $this->organizationStore->getOrganizationId(),
             'expires_at' => $token?->expires_at?->toIso8601String(),
         ]);
     }

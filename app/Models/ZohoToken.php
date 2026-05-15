@@ -14,8 +14,6 @@ class ZohoToken extends Model
         'expires_at',
         'scope',
         'api_domain',
-        'organization_id',
-        'organization_name',
     ];
 
     protected $casts = [

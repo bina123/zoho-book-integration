@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Contracts\OrganizationStore;
 use App\Contracts\ZohoTokenStore;
 use App\Exceptions\ZohoApiException;
 use App\Http\Requests\LoadReportRequest;
 use App\Services\ReportService;
 use App\Support\ReportPresenter;
 use Carbon\Carbon;
-
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -24,6 +24,7 @@ final class ReportController extends Controller
     public function __construct(
         protected ReportService $reportService,
         protected ZohoTokenStore $tokenStore,
+        protected OrganizationStore $organizationStore,
     ) {}
 
     public function index(LoadReportRequest $request): View
@@ -31,9 +32,8 @@ final class ReportController extends Controller
         $monthA = $request->monthA();
         $monthB = $request->monthB();
 
-        $token = $this->tokenStore->getLatestToken();
-        $connected = $token !== null;
-        $hasOrganization = $connected && ! empty($token->organization_id);
+        $connected = $this->tokenStore->getLatestToken() !== null;
+        $hasOrganization = $connected && $this->organizationStore->getOrganizationId() !== null;
 
         $report = null;
         $error = null;
