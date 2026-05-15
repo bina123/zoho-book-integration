@@ -1,0 +1,142 @@
+{
+    "code": 0,
+    "message": "success",
+    "profit_and_loss": [
+        {
+            "total": 112500,
+            "previous_values": [],
+            "account_transactions": [
+                {
+                    "total": 200000,
+                    "total_label": "Total Operating Income",
+                    "previous_values": [],
+                    "account_transactions": [
+                        {
+                            "total_sub_account": 0,
+                            "total": 200000,
+                            "account_id": "3818482000000000486",
+                            "depth": 0,
+                            "previous_values": [],
+                            "is_child_present": false,
+                            "name": "Sales",
+                            "previous_total_sub_account": [],
+                            "account_code": "",
+                            "is_collapsed_view": false,
+                            "previous_total": []
+                        }
+                    ],
+                    "name": "Operating Income",
+                    "previous_total": []
+                },
+                {
+                    "total": 87500,
+                    "total_label": "Total Cost of Goods Sold",
+                    "previous_values": [],
+                    "account_transactions": [
+                        {
+                            "total_sub_account": 0,
+                            "total": 87500,
+                            "account_id": "3818482000000000567",
+                            "depth": 0,
+                            "previous_values": [],
+                            "is_child_present": false,
+                            "name": "Cost of Goods Sold",
+                            "previous_total_sub_account": [],
+                            "account_code": "",
+                            "is_collapsed_view": false,
+                            "previous_total": []
+                        }
+                    ],
+                    "name": "Cost of Goods Sold",
+                    "previous_total": []
+                }
+            ],
+            "name": "Gross Profit",
+            "previous_total": []
+        },
+        {
+            "total": 112500,
+            "previous_values": [],
+            "account_transactions": [
+                {
+                    "total": 0,
+                    "total_label": "Total Operating Expense",
+                    "previous_values": [],
+                    "account_transactions": [],
+                    "name": "Operating Expense",
+                    "previous_total": []
+                }
+            ],
+            "name": "Operating Profit",
+            "previous_total": []
+        },
+        {
+            "total": 112500,
+            "previous_values": [],
+            "account_transactions": [
+                {
+                    "total": 0,
+                    "total_label": "Total Non Operating Income",
+                    "previous_values": [],
+                    "account_transactions": [],
+                    "name": "Non Operating Income",
+                    "previous_total": []
+                },
+                {
+                    "total": 0,
+                    "total_label": "Total Non Operating Expense",
+                    "previous_values": [],
+                    "account_transactions": [],
+                    "name": "Non Operating Expense",
+                    "previous_total": []
+                }
+            ],
+            "name": "Net Profit/Loss",
+            "previous_total": []
+        }
+    ],
+    "page_context": {
+        "can_show_reports_banner": false,
+        "can_schedule": true,
+        "is_inv_txn_job_in_progress": false,
+        "report_basis": "Accrual",
+        "is_already_scheduled": false,
+        "report_type": "profit_and_loss",
+        "applied_filter": "TransactionDate.ThisMonth",
+        "from_date": "2026-05-01",
+        "to_date": "2026-05-31",
+        "previous_date_range": [],
+        "show_rows": "non_zero",
+        "last_accessed_time_formatted": "14/05/2026 08:48 PM",
+        "select_columns": [
+            {
+                "field": "name",
+                "group": "report"
+            },
+            {
+                "field": "total",
+                "group": "report"
+            }
+        ],
+        "group_by": [
+            {
+                "field": "none",
+                "group": "report"
+            }
+        ],
+        "date_range_label": "",
+        "fifo_scheduler_status": {
+            "is_queue_entry_present": false,
+            "is_job_status_completed": true
+        },
+        "date_range_list": [
+            {
+                "date_range_label": "01 May 2026 - 31 May 2026",
+                "from_date": "2026-05-01",
+                "to_date": "2026-05-31"
+            }
+        ],
+        "sort_column": "account_name",
+        "sort_order": "A"
+    }
+}

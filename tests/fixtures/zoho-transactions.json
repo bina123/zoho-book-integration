@@ -1,0 +1,508 @@
+{
+    "code": 0,
+    "message": "success",
+    "account_transactions": [
+        {
+            "account_transactions": [
+                {
+                    "date": "2026-05-01",
+                    "account_name": "Accounts Receivable",
+                    "transaction_details": "TATA SONS",
+                    "transaction_id": "3818482000000032229",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "invoice",
+                    "reference_number": "",
+                    "entity_number": "INV002",
+                    "debit": 200000,
+                    "credit": "",
+                    "net_amount": "200000.00 Dr",
+                    "contact_id": "3818482000000032167",
+                    "account_id": "3818482000000000462",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "asset",
+                        "account_type": "accounts_receivable"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-01",
+                    "account_name": "Sales",
+                    "transaction_details": "TATA SONS",
+                    "transaction_id": "3818482000000032229",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "invoice",
+                    "reference_number": "",
+                    "entity_number": "INV002",
+                    "debit": "",
+                    "credit": 200000,
+                    "net_amount": "200000.00 Cr",
+                    "contact_id": "3818482000000032167",
+                    "account_id": "3818482000000000486",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "income",
+                        "account_type": "income"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-01",
+                    "account_name": "Accounts Payable",
+                    "transaction_details": "TATA CAPITAL",
+                    "transaction_id": "3818482000000032359",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "bill",
+                    "reference_number": "",
+                    "entity_number": "BILL002",
+                    "debit": "",
+                    "credit": 7500,
+                    "net_amount": "7500.00 Cr",
+                    "contact_id": "3818482000000032196",
+                    "account_id": "3818482000000000471",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "liability",
+                        "account_type": "accounts_payable"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-01",
+                    "account_name": "Cost of Goods Sold",
+                    "transaction_details": "TATA CAPITAL",
+                    "transaction_id": "3818482000000032359",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "bill",
+                    "reference_number": "",
+                    "entity_number": "BILL002",
+                    "debit": 7500,
+                    "credit": "",
+                    "net_amount": "7500.00 Dr",
+                    "contact_id": "3818482000000032196",
+                    "account_id": "3818482000000000567",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "expense",
+                        "account_type": "cost_of_goods_sold"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-01",
+                    "account_name": "Accounts Payable",
+                    "transaction_details": "TATA CHEMICALS",
+                    "transaction_id": "3818482000000032427",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "bill",
+                    "reference_number": "",
+                    "entity_number": "BILL004",
+                    "debit": "",
+                    "credit": 12500,
+                    "net_amount": "12500.00 Cr",
+                    "contact_id": "3818482000000032182",
+                    "account_id": "3818482000000000471",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "liability",
+                        "account_type": "accounts_payable"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-01",
+                    "account_name": "Cost of Goods Sold",
+                    "transaction_details": "TATA CHEMICALS",
+                    "transaction_id": "3818482000000032427",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "bill",
+                    "reference_number": "",
+                    "entity_number": "BILL004",
+                    "debit": 12500,
+                    "credit": "",
+                    "net_amount": "12500.00 Dr",
+                    "contact_id": "3818482000000032182",
+                    "account_id": "3818482000000000567",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "expense",
+                        "account_type": "cost_of_goods_sold"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-01",
+                    "account_name": "Accounts Payable",
+                    "transaction_details": "TATA MOTORS",
+                    "transaction_id": "3818482000000032467",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "bill",
+                    "reference_number": "",
+                    "entity_number": "BILL006",
+                    "debit": "",
+                    "credit": 17500,
+                    "net_amount": "17500.00 Cr",
+                    "contact_id": "3818482000000032175",
+                    "account_id": "3818482000000000471",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "liability",
+                        "account_type": "accounts_payable"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-01",
+                    "account_name": "Cost of Goods Sold",
+                    "transaction_details": "TATA MOTORS",
+                    "transaction_id": "3818482000000032467",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "bill",
+                    "reference_number": "",
+                    "entity_number": "BILL006",
+                    "debit": 17500,
+                    "credit": "",
+                    "net_amount": "17500.00 Dr",
+                    "contact_id": "3818482000000032175",
+                    "account_id": "3818482000000000567",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "expense",
+                        "account_type": "cost_of_goods_sold"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-01",
+                    "account_name": "Accounts Payable",
+                    "transaction_details": "TATA POWER",
+                    "transaction_id": "3818482000000032499",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "bill",
+                    "reference_number": "",
+                    "entity_number": "BILL008",
+                    "debit": "",
+                    "credit": 22500,
+                    "net_amount": "22500.00 Cr",
+                    "contact_id": "3818482000000032189",
+                    "account_id": "3818482000000000471",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "liability",
+                        "account_type": "accounts_payable"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-01",
+                    "account_name": "Cost of Goods Sold",
+                    "transaction_details": "TATA POWER",
+                    "transaction_id": "3818482000000032499",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "bill",
+                    "reference_number": "",
+                    "entity_number": "BILL008",
+                    "debit": 22500,
+                    "credit": "",
+                    "net_amount": "22500.00 Dr",
+                    "contact_id": "3818482000000032189",
+                    "account_id": "3818482000000000567",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "expense",
+                        "account_type": "cost_of_goods_sold"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-01",
+                    "account_name": "Accounts Payable",
+                    "transaction_details": "TITAN COMPANY",
+                    "transaction_id": "3818482000000032531",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "bill",
+                    "reference_number": "",
+                    "entity_number": "BILL010",
+                    "debit": "",
+                    "credit": 27500,
+                    "net_amount": "27500.00 Cr",
+                    "contact_id": "3818482000000032203",
+                    "account_id": "3818482000000000471",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "liability",
+                        "account_type": "accounts_payable"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-01",
+                    "account_name": "Cost of Goods Sold",
+                    "transaction_details": "TITAN COMPANY",
+                    "transaction_id": "3818482000000032531",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "bill",
+                    "reference_number": "",
+                    "entity_number": "BILL010",
+                    "debit": 27500,
+                    "credit": "",
+                    "net_amount": "27500.00 Dr",
+                    "contact_id": "3818482000000032203",
+                    "account_id": "3818482000000000567",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "expense",
+                        "account_type": "cost_of_goods_sold"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-14",
+                    "account_name": "Petty Cash",
+                    "transaction_details": "TATA CHEMICALS",
+                    "transaction_id": "3818482000000032395",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "vendor_payment",
+                    "reference_number": "",
+                    "entity_number": "BILL003",
+                    "debit": "",
+                    "credit": 10000,
+                    "net_amount": "10000.00 Cr",
+                    "contact_id": "3818482000000032182",
+                    "account_id": "3818482000000000459",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "asset",
+                        "account_type": "cash"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-14",
+                    "account_name": "Accounts Payable",
+                    "transaction_details": "TATA CHEMICALS",
+                    "transaction_id": "3818482000000032395",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "vendor_payment",
+                    "reference_number": "",
+                    "entity_number": "BILL003",
+                    "debit": 10000,
+                    "credit": "",
+                    "net_amount": "10000.00 Dr",
+                    "contact_id": "3818482000000032182",
+                    "account_id": "3818482000000000471",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "liability",
+                        "account_type": "accounts_payable"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-14",
+                    "account_name": "Petty Cash",
+                    "transaction_details": "TATA CAPITAL",
+                    "transaction_id": "3818482000000032411",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "vendor_payment",
+                    "reference_number": "",
+                    "entity_number": "BILL002",
+                    "debit": "",
+                    "credit": 7500,
+                    "net_amount": "7500.00 Cr",
+                    "contact_id": "3818482000000032196",
+                    "account_id": "3818482000000000459",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "asset",
+                        "account_type": "cash"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                },
+                {
+                    "date": "2026-05-14",
+                    "account_name": "Accounts Payable",
+                    "transaction_details": "TATA CAPITAL",
+                    "transaction_id": "3818482000000032411",
+                    "reference_transaction_id": "",
+                    "offset_account_id": "",
+                    "offset_account_type": "",
+                    "transaction_type": "vendor_payment",
+                    "reference_number": "",
+                    "entity_number": "BILL002",
+                    "debit": 7500,
+                    "credit": "",
+                    "net_amount": "7500.00 Dr",
+                    "contact_id": "3818482000000032196",
+                    "account_id": "3818482000000000471",
+                    "project_ids": "",
+                    "currency_code": "INR",
+                    "account": {
+                        "account_group": "liability",
+                        "account_type": "accounts_payable"
+                    },
+                    "reporting_tag": "",
+                    "branch": []
+                }
+            ],
+            "opening_balance": {
+                "date": "As On 01/05/2026",
+                "credit_formatted": "",
+                "debit_formatted": "",
+                "fcy_credit": "",
+                "account_debit_balance": 75000,
+                "fcy_debit_formatted": "",
+                "name": "Opening Balance",
+                "fcy_credit_formatted": "",
+                "debit": "75,000.00",
+                "credit": "",
+                "fcy_debit": ""
+            },
+            "total_debit_and_credit_balance": {
+                "total_credit": 305000,
+                "total_debit": 305000,
+                "debit": 305000,
+                "credit": 305000
+            },
+            "closing_balance": {
+                "date": "As On 31/05/2026",
+                "credit_formatted": "",
+                "debit_formatted": "",
+                "fcy_credit": "",
+                "fcy_debit_formatted": "",
+                "name": "Closing Balance",
+                "fcy_credit_formatted": "",
+                "debit": "1,62,500.00",
+                "credit": "",
+                "fcy_debit": ""
+            }
+        }
+    ],
+    "page_context": {
+        "page": 1,
+        "per_page": 500,
+        "has_more_page": false,
+        "report_name": "Account Transactions",
+        "can_show_reports_banner": false,
+        "can_schedule": true,
+        "is_inv_txn_job_in_progress": false,
+        "report_basis": "Accrual",
+        "is_already_scheduled": false,
+        "report_type": "account_transactions",
+        "applied_filter": "TransactionDate.ThisMonth",
+        "from_date": "2026-05-01",
+        "to_date": "2026-05-31",
+        "show_rows": "non_zero",
+        "last_accessed_time_formatted": "14/05/2026 08:49 PM",
+        "select_columns": [
+            {
+                "field": "date",
+                "group": "report"
+            },
+            {
+                "field": "account_name",
+                "group": "report"
+            },
+            {
+                "field": "transaction_details",
+                "group": "report"
+            },
+            {
+                "field": "transaction_type",
+                "group": "report"
+            },
+            {
+                "field": "entity_number",
+                "group": "report"
+            },
+            {
+                "field": "reference_number",
+                "group": "report"
+            },
+            {
+                "field": "debit",
+                "group": "report"
+            },
+            {
+                "field": "credit",
+                "group": "report"
+            },
+            {
+                "field": "net_amount",
+                "group": "report"
+            }
+        ],
+        "group_by": [
+            {
+                "field": "none",
+                "group": "report"
+            }
+        ],
+        "fifo_scheduler_status": {
+            "is_queue_entry_present": false,
+            "is_job_status_completed": true
+        },
+        "sort_column": "date",
+        "sort_order": "A"
+    }
+}

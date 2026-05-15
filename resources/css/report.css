@@ -1,0 +1,397 @@
+/* ----------------------------------------------------------------------------
+ * Report page — P&L comparison table, budget editor, transactions modal.
+ * Depends on the design tokens declared in app.css (--primary, --border, etc.).
+ * ------------------------------------------------------------------------- */
+
+.filters {
+    display: flex;
+    gap: 12px;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.filters label {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    color: var(--muted);
+    gap: 4px;
+}
+
+.filters input {
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* P&L table ---------------------------------------------------------------- */
+
+.pnl-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.pnl-table th,
+.pnl-table td {
+    border: 1px solid var(--border);
+    padding: 8px 10px;
+}
+
+.pnl-table thead th {
+    background: var(--primary-dark);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.pnl-table .col-key {
+    background: #e7ecf7;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--primary-dark);
+}
+
+.pnl-table td.num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.pnl-table td.label {
+    font-weight: 500;
+}
+
+.pnl-table td.label.center {
+    text-align: center;
+}
+
+.pnl-table tr.section-header td {
+    background: #f1f4fb;
+    font-weight: 600;
+}
+
+.pnl-table tr.section-total td {
+    font-weight: 700;
+    background: #fafbff;
+}
+
+.pnl-table tr.net-total td {
+    font-weight: 700;
+    background: #eef2ff;
+    border-top: 2px solid var(--primary-dark);
+}
+
+.pnl-table tr.spacer td {
+    background: var(--bg);
+    height: 8px;
+    padding: 2px;
+    border-left: 0;
+    border-right: 0;
+}
+
+.pnl-table .pos {
+    color: var(--positive);
+}
+
+.pnl-table .neg {
+    color: var(--negative);
+}
+
+.pnl-link {
+    color: var(--primary);
+    text-decoration: underline;
+    font-weight: 700;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.pnl-link:hover {
+    color: var(--primary-dark);
+}
+
+/* Budget editor ------------------------------------------------------------ */
+
+.budget-form {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.budget-input {
+    width: 100px;
+    padding: 4px 6px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: right;
+    font-size: 14px;
+    font-family: inherit;
+    font-variant-numeric: tabular-nums;
+    background: transparent;
+}
+
+.budget-input:hover {
+    border-color: var(--border);
+    background: white;
+}
+
+.budget-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: white;
+}
+
+.budget-save {
+    opacity: 0;
+    transition: opacity 0.15s;
+    background: var(--primary);
+    color: white;
+    border: 0;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.budget-form.dirty .budget-save {
+    opacity: 1;
+}
+
+/* Transactions modal ------------------------------------------------------- */
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.55);
+    z-index: 1000;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 16px;
+    overflow-y: auto;
+}
+
+.modal-overlay.open {
+    display: flex;
+}
+
+.modal {
+    background: white;
+    border-radius: 8px;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 16px;
+    color: var(--primary-dark);
+}
+
+.modal-body {
+    padding: 16px 20px;
+    min-height: 120px;
+}
+
+.modal-footer {
+    padding: 12px 20px;
+    border-top: 1px solid var(--border);
+    text-align: right;
+}
+
+.modal-close {
+    background: none;
+    border: 0;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--muted);
+}
+
+.modal-close:hover {
+    color: #111;
+}
+
+.modal-loading {
+    text-align: center;
+    color: var(--muted);
+    padding: 32px;
+}
+
+.modal-error {
+    color: var(--negative);
+    padding: 16px;
+    background: #fef2f2;
+    border-radius: 6px;
+}
+
+/* Transactions table inside modal */
+
+.txn-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.txn-table th,
+.txn-table td {
+    border: 1px solid var(--border);
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.txn-table th {
+    background: #f1f4fb;
+}
+
+.txn-table td.num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.txn-table tr.balance-row td {
+    background: #f9fbff;
+    font-weight: 600;
+}
+
+.txn-table tr.totals-row td {
+    background: #eef2ff;
+    font-weight: 700;
+    border-top: 2px solid var(--primary-dark);
+}
+
+.txn-report-header {
+    text-align: center;
+    padding: 12px 0 18px;
+    color: #1f2937;
+}
+
+.txn-report-header .org {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.txn-report-header .title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.txn-report-header .basis {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.txn-report-header .account {
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+.txn-report-header .period {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+/* Layout helpers (formerly inline styles) -------------------------------- */
+
+.form-inline {
+    margin: 0;
+}
+
+.filters-info {
+    margin-left: auto;
+}
+
+.budget-label-cell {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.col-pnl {
+    width: 30%;
+}
+
+/* Budgets editor card ---------------------------------------------------- */
+
+.section-title {
+    margin-top: 0;
+}
+
+.budgets-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.budgets-table thead tr {
+    background: #eef2ff;
+}
+
+.budgets-table th,
+.budgets-table td {
+    border: 1px solid var(--border);
+    padding: 8px;
+}
+
+.budgets-table th.amount,
+.budgets-table td.amount {
+    text-align: right;
+}
+
+.budgets-table th.action,
+.budgets-table td.action {
+    text-align: center;
+}
+
+.budgets-table .row-cell {
+    padding: 6px;
+}
+
+.budgets-table input[type='number'] {
+    width: 140px;
+    text-align: right;
+    padding: 4px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+/* Org-picker --------------------------------------------------------------*/
+
+.org-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.org-table th,
+.org-table td {
+    border: 1px solid var(--border);
+    padding: 10px;
+    text-align: left;
+}
+
+.org-table thead tr {
+    background: #eef2ff;
+}
+
+.org-table td.mono {
+    font-family: monospace;
+}
+
+.org-actions {
+    margin-top: 16px;
+}

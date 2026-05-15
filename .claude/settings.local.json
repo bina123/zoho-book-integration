@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php *)",
+      "Bash(curl -s -H \"Accept: application/json\" \"http://127.0.0.1:8000/api/report/transactions?account_id=foo&month=2026-05\")",
+      "Bash(curl -s -H \"Accept: application/json\" \"http://127.0.0.1:8000/api/zoho/status\")"
+    ]
+  }
+}
